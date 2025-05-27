@@ -1,58 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-<head id="metadata">
-    <meta name="description" content="Personal Website">
+<head>
+    <!--Metadata-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Divine Mbamara | Software Developer & Creative Technologist</title>
-    <!--CSS file-->
-    <link rel="stylesheet" href="css/styles.css">
-    <!--jquery-->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <meta name="description" content="Personal Website">
+    <meta name="robots" content="noindex,nofollow">
     <!--JS file-->
     <script src="js/scripts.js" defer></script>
-    <!--google fonts-->
-    <!--fontawesome-->
+    <!--CSS file-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!--Icons-->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<!--Header-->
-<header id="header"></header>
-<!--About Divine-->
-<section class="about">
-    <div class="profile-pic">
-        <img src="#" alt="Picture of Divine Mbamara"/>
-    </div>
-    <div>
-        <h1>Hey, I'm Divine!</h1>
-        <p>A creative developer and digital problem solver.
-            I build clean, user-friendly websites and bring ideas to life with code,
-            design, and just the right spark of imagination. (Curious to know more?
-            <a href="about.html" target="_self">Read my full story...</a>)
-        </p>
-    </div>
-</section>
-<!--Main-->
-<main>
-    <!--Projects-->
-    <section class="projects">
-        <h2>Let Me Take You on a Journey...</h2>
+    <header>
+        <!--Desktop-->
+        <div class="desktop">
+            <nav>
+                <menu>
+                    <li><a href="#about" target="_self">About</a></li>
+                    <li><a href="#projects" target="_self" >Projects</a></li>
+                    <li><a href="#contact" target="_self" >Contact</a></li>
+                </menu>
+                <a class="github-link-head" href="https://github.com/Divine-Mbamara" target="_self"><i class="devicon-github-original"></i></a>
+                <a class="linkedin-link-head" href="https://www.linkedin.com/in/divine-mbamara/" target="_self"><i class="devicon-linkedin-plain"></i></a>
+            </nav>
+        </div>
+        <!-- Mobile -->
+        <div class="mobile">
+            <input id="mobile-design" type="checkbox">
+            <label for="mobile-design">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <menu>
+                    <li><a href="#about" target="_self">About</a></li>
+                    <li><a href="#projects" target="_self" >Projects</a></li>
+                    <li><a href="#contact" target="_self" >Contact</a></li>
+                    <li><a href="https://github.com/Divine-Mbamara" target="_self">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/divine-mbamara/" target="_self">LinkedIn</a></li>
+                </menu>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="about" id="about">
+            <div class="profile-pic">
+                <img src="img/profile.png" alt="Picture of Divine Mbamara"/>
+            </div>
+            <div>
+                <h1>Hi, I'm Divine!</h1>
+                <p>A Creative <span class="occupation">Software Developer</span> and digital problem solver. I build clean,
+                    user-friendly websites and bring ideas to life with code, design,
+                    and just the right spark of imagination.</p>
+                <p>I develop projects with clarity and intention and focus
+                    on building systems that are both functional and meaningful. I
+                    deliver high-quality solutions and thrive in environments where technology
+                    is used to solve real problems and make a lasting impact.</p>
+            </div>
+            <div class="language-icons">
+                <i class="devicon-csharp-plain-wordmark colored"></i>
+                <i class="devicon-python-plain-wordmark colored"></i>
+                <i class="devicon-dotnetcore-plain colored"></i>
+                <i class="devicon-html5-plain-wordmark"></i>
+                <i class="devicon-css3-plain-wordmark"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-php-plain"></i>
+                <i class="devicon-mysql-plain-wordmark colored"></i>
+                <i class="devicon-cplusplus-plain colored"></i>
+                <i class="devicon-java-plain-wordmark"></i>
+            </div>
+            <div class="tool-icons">
+                <i class="devicon-azure-plain"></i>
+                <i class="devicon-microsoftsqlserver-plain-wordmark"></i>
+                <i class="devicon-azuresqldatabase-plain colored"></i>
+                <i class="devicon-visualstudio-plain colored"></i>
+                <i class="devicon-vscode-plain-wordmark"></i>
+                <i class="devicon-github-original colored"></i>
+                <i class="devicon-arduino-plain-wordmark"></i>
+                <i class="devicon-eclipse-plain colored"></i>
+            </div>
+            <div class="all-icons">
+                <i class="devicon-csharp-plain-wordmark colored"></i>
+                <i class="devicon-python-plain-wordmark colored"></i>
+                <i class="devicon-dotnetcore-plain colored"></i>
+                <i class="devicon-html5-plain-wordmark"></i>
+                <i class="devicon-css3-plain-wordmark"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-php-plain"></i>
+                <i class="devicon-mysql-plain-wordmark colored"></i>
+                <i class="devicon-cplusplus-plain colored"></i>
+                <i class="devicon-java-plain-wordmark"></i><i class="devicon-azure-plain"></i>
+                <i class="devicon-microsoftsqlserver-plain-wordmark"></i>
+                <i class="devicon-azuresqldatabase-plain colored"></i>
+                <i class="devicon-visualstudio-plain colored"></i>
+                <i class="devicon-vscode-plain-wordmark"></i>
+                <i class="devicon-github-original colored"></i>
+                <i class="devicon-arduino-plain-wordmark"></i>
+                <i class="devicon-eclipse-plain colored"></i>
+
+            </div>
+        </section>
+        <section class="projects-wrapper" id="projects">
+            <h2 class="sub-head">PROJECTS</h2>
+            <div class="projects">
+                <!--Project 1-->
+                <div class="project-popup" id="project-popup-1">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup1()">&times;</div>
+                        <h2>Pizza Webpage (CSS Implementation)</h2>
+                        <h4>Description</h4>
+                        <p>This project was an early introduction to web design, focused on showcasing fundamental HTML structure and CSS styling techniques. The goal was to build a visually appealing pizza-themed webpage with static content, reinforcing layout, formatting, and basic form design.</p>
+                        <h4>Key Features</h4>
+                        <p><span>Structured Layout:</span> Organized header, main content, aside, and footer for clear navigation.</p>
+                        <p><span>Pizza Display:</span> Visually arranged pizza options with names, pricing, and ingredients.</p>
+                        <p><span>Static Order Form:</span> Simple form layout to simulate ordering experience.</p>
+                        <h4>Tools and Technologies</h4>
+                        <p>HTML5, CSS3</p>
+                        <h4>Live Link</h4>
+                        <a href="https://divine-mbamara.github.io/Html-Css-Js-Fund-Assignment2/" target="_self" class="live-link">Launch Project</a>
+                    </div>
+                </div>
+                <div class="project" onclick="togglePopup1()">
+                    <img src="img/pizza.jpg" alt="Pizza Webpage Image"/>
+                    <div class="text">
+                        <h3>Pizza Webpage</h3>
+                        <h4><span class="project-content">HTML5</span><span class="project-content">CSS3</span></h4>
+                    </div>
+                </div>
+
+                <!--Project 2-->
+                <div class="project-popup" id="project-popup-2">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup2()">&times;</div>
+                        <h2>Movie Poster Recreation (The Lost Boys)</h2>
+                        <h4>Description</h4>
+                        <p>This project was focused on precision in HTML and CSS to replicate a real-world visual design. The task involved recreating a movie poster from scratch, paying close attention to layout, typography, and positioning. A link to the original IMDb poster was included for comparison.</p>
+                        <h4>Key Features</h4>
+                        <p><span>Accurate Layout:</span> Careful positioning of elements to match the original poster’s structure.</p>
+                        <p><span>Typography Matching:</span> CSS used to imitate the look and feel of poster fonts and text hierarchy.</p>
+                        <p><span>Interactive Link:</span> Clicking on the recreated poster redirects to the original IMDb page for validation.</p>
+                        <h4>Tools and Technologies</h4>
+                        <p>HTML5, CSS3</p>
+                        <h4>Live Link</h4>
+                        <a href="https://divine-mbamara.github.io/Html-Css-Js-Fund-Assignment3/" target="_self" class="live-link">Launch Project</a>
+                    </div>
+                </div>
+                <div class="project" onclick="togglePopup2()">
+                    <img src="img/movie.jpg" alt="Movie Poster Image"/>
+                    <div class="text">
+                        <h3>Movie Poster</h3>
+                        <h4><span class="project-content">HTML5</span><span class="project-content">CSS3</span></h4>
+                    </div>
+                </div>
+
+                <!--Project 3-->
+                <div class="project-popup" id="project-popup-3">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup3()">&times;</div>
+                        <h2>Polaroid Website (Commercial Product)</h2>
+                        <h4>Description</h4>
+                        <p>The purpose of this project was to build a complete, multi-page product website using foundational HTML, CSS, and JavaScript. It simulates an online store for Polaroid cameras, featuring a homepage, product listings, an about page, a contact page, and a privacy policy page. The focus was on page structure, consistent styling, and basic interactivity across a connected site.</p>
+                        <h4>Key Features</h4>
+                        <p><span>Multi-Page Architecture:</span> Home, product listings, individual product pages, about, contact, and privacy policy.</p>
+                        <p><span>Interactive Product Display:</span> Clickable images leading to detailed product descriptions.</p>
+                        <p><span>Unified Styling:</span> Cohesive layout and design across all pages.</p>
+                        <h4>Tools and Technologies</h4>
+                        <p>HTML5, CSS3, JavaScript</p>
+                        <h4>Live Link</h4>
+                        <a href="https://divine-mbamara.github.io/Html-Css-Js-Fund-FinalProject/" target="_self" class="live-link">Launch Project</a>
+                    </div>
+                </div>
+                <div class="project" onclick="togglePopup3()">
+                    <img src="img/polaroid.jpg" alt="Polaroid Website Image"/>
+                    <div class="text">
+                        <h3>Polaroid Website</h3>
+                        <h4><span class="project-content">HTML5</span><span class="project-content">CSS3</span><span class="project-content">JavaScript</span></h4>
+                    </div>
+                </div>
+
+                <!--Project 4-->
+                <div class="project-popup" id="project-popup-4">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup4()">&times;</div>
+                        <h2>Driveway Security System</h2>
+                        <h4>Description</h4>
+                        <p>This project was built using Tinkercad’s Arduino simulator to develop an IoT gateway security system. The goal was to simulate a smart access control mechanism that responds to password input using a combination of visual, audio, and mechanical components.</p>
+                        <h4>Key Features</h4>
+                        <p><span>Password-Protected Access:</span> User must enter a correct password to trigger the system.</p>
+                        <p><span>Visual & Audio Feedback:</span> Green/red LED indicators and piezo buzzer signals for access status.</p>
+                        <p><span>Servo Motor Gate Simulation:</span> Simulates a gate opening upon successful access.</p>
+                        <p><span>LCD Feedback Display:</span> Dynamic messages show "Access granted" or "Access denied" based on input.</p>
+                        <h4>Tools and Technologies</h4>
+                        <p>Arduino, C++, Tinkercad</p>
+                        <h4>Live Demo</h4>
+                        <p><a href="https://drive.google.com/file/d/1d7uW7tYkoOAp2Qu4jewXSbL6IM1DoQwl/view?usp=sharing" target="_self" class="live-link">View Demo</a> ||
+                            <a href="https://www.tinkercad.com/things/4Ru9NTmHxhh-driveway-security-system/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=-tXij_eAKFjADoTGDi_GLU0Lb0C6hc88keH6sn1gdzU" target="_self" class="live-link">Launch Project (Login Required)</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="project" onclick="togglePopup4()">
+                    <img src="img/securitySystem.jpg" alt="Security System Image"/>
+                    <div class="text">
+                        <h3>Security System</h3>
+                        <h4><span class="project-content">Arduino</span><span class="project-content">C++</span><span class="project-content">Tinkercad</span></h4>
+                    </div>
+                </div>
+
+                <!--Project 5-->
+                <div class="project-popup" id="project-popup-5">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup5()">&times;</div>
+                        <h2>Clock Website (E-commerce Interface Design)</h2>
+                        <h4>Description</h4>
+                        <p>The purpose of this project was to design a vibrant and engaging homepage for a candy. The design focused on creating a sweet, eye-catching experience that reflects the fun and colorful vibe of the product, while ensuring responsiveness across devices.</p>
+                        <h4>Key Features</h4>
+                        <p><span>Gradient Background & Color Play:</span> A dynamic background using CSS gradients that matched the candy’s colorful branding.</p>
+                        <p><span>Interactive Animations:</span> Hover effects, zoom in/out transitions, and animated SVG elements to enhance engagement.</p>
+                        <p><span>Responsive Layout:</span> Designed to adapt to different screen sizes, with fluid scaling and layout adjustments.</p>
+                        <h4>Tools and Technologies</h4>
+                        <p>HTML5, CSS3</p>
+                        <h4>Live Link</h4>
+                        <a href="https://divine-mbamara.github.io/Interface-Design-Assignment2/" target="_self" class="live-link">Launch Project</a>
+                    </div>
+                </div>
+                <div class="project" onclick="togglePopup5()">
+                    <img src="img/candy.jpg" alt="Candy Webpage Image"/>
+                    <div class="text">
+                        <h3>Candy Webpage</h3>
+                        <h4><span class="project-content">HTML5</span><span class="project-content">CSS3</span></h4>
+                    </div>
+                </div>
+
+                <!--Project 6-->
+                <div class="project-popup" id="project-popup-6">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup6()">&times;</div>
+                        <h2>Clock Website (E-commerce Interface Design)</h2>
+                        <h4>Description</h4>
+                        <p>The goal of this project was to create a small promotional website for a product using structured HTML and advanced CSS styling. This project emphasized visual design, semantic structure, responsive behavior, and user-friendly navigation.</p>
+                        <h4>Key Features</h4>
+                        <p><span>Interactive & Responsive Design:</span> Responsive layouts with hover effects, sliding text/images, SVGs, and zoom effects to enhance engagement across devices.</p>
+                        <p><span>Visual Styling & Effects:</span> Clip-paths, background images/colors, typography, and color coordination for a modern aesthetic.</p>
+                        <p><span>Comprehensive Website Structure:</span> Core e-commerce pages such as Home, About, Contact, Catalog, Product pages, Sign In/Register, Payment and Shipping Info, and Return policy.</p>
+                        <h4>Tools and Technologies</h4>
+                        <p>HTML5, CSS3, JavaScript</p>
+                        <h4>Live Link</h4>
+                        <a href="https://divine-mbamara.github.io/Interface-Design-Project-Clock-Website/" target="_self" class="live-link">Launch Project</a>
+                    </div>
+                </div>
+                <div class="project" onclick="togglePopup6()">
+                    <img src="img/clock.jpg" alt="Clock Website Image"/>
+                    <div class="text">
+                        <h3>Clock Website</h3>
+                        <h4><span class="project-content">HTML5</span><span class="project-content">CSS3</span><span class="project-content">JavaScript</span></h4>
+                    </div>
+                </div>
+
+                <!--Project 7-->
+                <div class="project-popup" id="project-popup-7">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup7()">&times;</div>
+                        <h2>The Pizza Maker (Interactive Order Form)</h2>
+                        <h4>Description</h4>
+                        <p>This project involved building a dynamic pizza ordering interface using HTML, CSS, and JavaScript. The aim was to allow users to customize their pizza selections and simulate the ordering process. The form captured user inputs and generated a summary of the order using object-oriented JavaScript principles.</p>
+                        <h4>Key Features</h4>
+                        <p><span>Pizza Customization:</span> Users could choose ingredients and pizza options via a structured form.</p>
+                        <p><span>Live Order Summary:</span> JavaScript captured form values and displayed a visual confirmation.</p>
+                        <p><span>Form Validation:</span> Basic checks ensured required fields were completed before processing.</p>
+                        <h4>Tools and Technologies</h4>
+                        <p>HTML5, CSS3, JavaScript</p>
+                        <h4>Live Link</h4>
+                        <a href="https://divine-mbamara.github.io/Assignment3-JavaScript/" target="_self" class="live-link">Launch Project</a>
+                    </div>
+                </div>
+                <div class="project" onclick="togglePopup7()">
+                    <img src="img/pizzaMaker.jpg" alt="Pizza Maker Image"/>
+                    <div class="text">
+                        <h3>The Pizza Maker</h3>
+                        <h4><span class="project-content">HTML5</span><span class="project-content">CSS3</span><span class="project-content">JavaScript</span></h4>
+                    </div>
+                </div>
+
+                <!--Project 8-->
+                <div class="project-popup" id="project-popup-8">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup8()">&times;</div>
+                        <h2>Weather API (Live Weather Report)</h2>
+                        <h4>Description</h4>
+                        <p>This project demonstrates how to connect to a third-party weather API using JavaScript to fetch and display real-time weather data based on user input. The user enters a city name and clicks the “Get Weather” button. The program retrieves the current weather conditions and visually simulates the temperature.</p>
+                        <h4>Key Features</h4>
+                        <p><span>Live Weather Data:</span> Fetches and displays city-specific weather information including temperature, description, and icon.</p>
+                        <p><span>Visual Temperature Feedback:</span> Slider displays temperature, while background color dynamically shifts (red for hot, orange/yellow for warm, light/dark blue for cold).</p>
+                        <p><span>Weather Icons:</span> Visual representation of current weather conditions (e.g. sun, clouds, rain).</p>
+                        <h4>Tools and Technologies</h4>
+                        <p>HTML5, CSS3, JavaScript, JSON, Fetch API</p>
+                        <h4>Live Link</h4>
+                        <a href="https://divine-mbamara.github.io/Assignment4-JavaScript/" target="_self" class="live-link">Launch Project</a>
+                    </div>
+                </div>
+                <div class="project" onclick="togglePopup8()">
+                    <img src="img/weatherAPI.jpg" alt="Weather API Image"/>
+                    <div class="text">
+                        <h3>Weather API</h3>
+                        <h4><span class="project-content">HTML5</span><span class="project-content">CSS3</span><span class="project-content">JavaScript</span><span class="project-content">JSON</span><span class="project-content">Fetch API</span></h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contact-form" id="contact">
+                <h2 class="sub-head">SEND A MESSAGE</h2>
+                <form class="contact-form" action="#" method="POST">
+                    <input type="text" id="name" name="name" placeholder="Name" required />
+                    <input type="email" id="email" name="email" placeholder="Email" required />
+                    <input type="text" id="subject" name="subject" placeholder="Subject" />
+                    <textarea id="message" name="message" rows="5" placeholder="Write A Message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
         <div>
-            <h3>First Hello World Application</h3>
-            <p>Date Created...</p>
+            <h4>Created by Divine Mbamara | © 2025</h4>
         </div>
         <div>
-            <h3>First HTML Skeleton</h3>
-            <p>Date Created...</p>
+            <a class="github-link-foot" href="https://github.com/Divine-Mbamara" target="_self"><i class="devicon-github-original"></i></a>
+            <a class="linkedin-link-foot" href="https://www.linkedin.com/in/divine-mbamara/" target="_self"><i class="devicon-linkedin-plain"></i></a>
+            <a href="mailto:Divine.Mbamara@MyGeorgian.ca" target="_self"><i class="fas fa-envelope"></i></a>
         </div>
-        <div>
-            <h3>First HTML Multimedia Page</h3>
-            <p>Date Created...</p>
-        </div>
-        <div>
-            <h3>First CSS Design: Pizza Webpage</h3>
-            <p>Date Created...</p>
-        </div>
-    </section>
-</main>
-<!--Footer-->
-<footer id="footer"></footer>
+    </footer>
 </body>
 </html>
